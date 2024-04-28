@@ -40,7 +40,7 @@ from trainer_callbacks import set_random_state
 def get_args():
     parser = ArgumentParser(description='test')
     parser.add_argument('--run_config', type=str, default='exp_512_r48')
-    parser.add_argument('--gpu_ids', type=str, default='0')
+    parser.add_argument('--gpu_ids', type=str, default='0,1,2,3')
     parser.add_argument('--n_workers', type=int, default=16)
     parser.add_argument('--batch_size', type=int, default=16)
     parser.add_argument('--seed', type=int, default=0)

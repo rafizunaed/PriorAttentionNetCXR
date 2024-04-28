@@ -147,7 +147,7 @@ def main():
                 'num_classes': 8 if configs['use_eight_class'] else 14,
                 }  
         
-        trainer = ModelTrainerProposed(**trainer_args)
+        trainer = ModelTrainer(**trainer_args)
         trainer.fit()
             
 if __name__ == '__main__':
